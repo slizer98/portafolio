@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100vw;
+    height: 70px;
+    background-color: black;
+    /* display: flex; */
+    /* align-items: center;*/
+} 
+.header-nav{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-nav p{
+    color: #fff;
+    font-size: 30px;
+    animation: logo 3s linear normal;
+}
+@keyframes logo{
+    0%{
+        opacity: 0.3;
+        font-size: 0px;
+        transform: translateX(0px);
+    }
+    25%{
+        opacity: 0.6;
+        transform: translateX(5px);
+    }
+    50%{
+        transform: translateX(15px);
+        text-shadow: 0 0 5px 0 rgb(5, 85, 5);
+        color: rgb(5, 85, 5);
+        font-size: 40px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        font-size: 30px;
+        transform: translateX(0px);
+    }
+
+}
+.header-nav ul{
+    display: flex;
+    list-style: none;
+}
+.header-nav li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0px 10px;
+    transition: 1s;
+}
+.header-nav li:hover a{
+    margin: 0px 20px;
+    color: rgb(5, 85, 5);
+    font-size: 30px;
+    animation: menu .7s linear alternate;
+}
+@keyframes menu{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(20px);
+ 
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/* MAIN */
+
+main{
+    background: linear-gradient(Black, rgb(54, 54, 54));
+    height:auto;
+    padding-top: 20px;
+}
+.presentation{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.presentation-container{
+    width: 400px;
+    /* border: 1px solid #fff; */
+    height: 40px;
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+    display: flex;
+    overflow: hidden;
+
+
+}
+.presentation-container ul{
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 6s infinite;
+}
+.presentation-container ul, .presentation-container p{
+    margin: 0;
+}
+
+@keyframes cambiar {
+    0%{margin-top: 0;}
+    20%{margin-top: 0;}
+    25%{margin-top: -40px;}
+    35%{color:rgb(5, 85, 5) ;}
+    50%{margin-top: -40px;}
+    55%{margin-top: 0;}
+    65%{color:rgb(5, 85, 5) ;}
+    80%{margin-top: 0;}
+    85%{margin-top: -40px;}
+    95%{margin-top: -40px;}
+    100%{margin-top: 0;}
+}
+
+.presentation-photo{
+    width: 330px;
+    height: 330px;
+    /* border: 1px solid red; */
+}
+.presentation-photo img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
